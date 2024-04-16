@@ -32,8 +32,6 @@ console.log(squadInfo);
 
 
 
-
-
 /**
  * Get random integer from 1 to 100
  *
