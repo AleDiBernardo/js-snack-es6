@@ -12,10 +12,8 @@ const persone = [
   { nome: 'Giulia', cognome: 'Neri', età: 15 }
 ];
 
-const personeChePossonoGuidare = persone.filter(persona => persona.età >= 18);
-
-const frasi = personeChePossonoGuidare.map(persona => {
-  return `${persona.nome} ${persona.cognome} può guidare.`;
+const frasi = persone.map(persona => {
+  return `${persona.nome} ${persona.cognome} ${persona.età >= 18 ? 'può guidare.' : 'non può guidare.'}`;
 });
 
 console.log(frasi);
