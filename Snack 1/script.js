@@ -18,7 +18,7 @@ let lighter = bikes[0].weight, lighterBikeIndex = 0;
 
 
 bikes.forEach((curBike, index) => {
-  const { name, weight } = curBike;
+  const {weight} = curBike;
   lighterBike(weight, index);
 });
 
