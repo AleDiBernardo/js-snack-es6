@@ -21,7 +21,23 @@ const automobili = [
 ];
 
 
+let autoBenzina = [];
+let autoDiesel = [];
+let auto = [];
 
 
+automobili.forEach((curAuto)=>{
+  if (curAuto.alimentazione === "benzina") {
+    autoBenzina.push(curAuto)
+  } else if (curAuto.alimentazione === "diesel") {
 
+    autoDiesel.push(curAuto)
+  } else {
 
+    auto.push(curAuto)
+  }
+})
+
+console.log(autoBenzina);
+console.log(autoDiesel);
+console.log(auto);
